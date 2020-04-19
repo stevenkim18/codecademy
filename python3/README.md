@@ -16,3 +16,10 @@ Hello
 World
 '''
 ~~~
+
+### 함수 만들기
+~~~python
+# 함수명 뒤에 괄호 넣어줘야 함!
+def say_hello(): 
+  print("hello")
+~~~
