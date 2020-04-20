@@ -23,3 +23,26 @@ World
 def say_hello(): 
   print("hello")
 ~~~
+
+### 키워드 매개변수
+* 함수를 호출할 때 매개변수의 이름에 직접 값을 넣을 수 있음.
+~~~python
+def sum(a, b):
+  return a + b
+  
+sum(b = 10, a = 12) # 직접 매개변수 이름을 불러서 대입 가능
+
+# 함수 생성시 매개변수를 기본 값으로 넣어 둘 수도 있음
+def greeting(name, words="Hello")
+  print(words + name)
+~~~
+
+## 함수에서 여러개의 리턴 값을 줄 수 있음.
+~~~python
+def get_boundaries(target, margin):
+  low_limit = target - margin
+  high_limit = margin + target
+  return (low_limit, high_limit)
+
+low ,high = get_boundaries(100, 20)
+~~~
