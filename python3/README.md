@@ -46,3 +46,8 @@ def get_boundaries(target, margin):
 
 low ,high = get_boundaries(100, 20)
 ~~~
+
+## 변수의 타입 확인하기
+~~~python
+print(type(변수)) # class 'str'
+~~~
