@@ -61,14 +61,3 @@ def divides(a,b):
   except ZeroDivisionError:
     print ("Can't divide by zero!")
 ~~~
-
-## 리스트
-* 한 리스트에 다양한 타입의 변수 저장 가능
-* 리스트 안에 리스트도 저장 가능
-~~~python
-jenny = ['Jenny', 61, 10.5]
-heights = [['Jenny', 61], ['Alexus', 70], ['Sam', 67], ['Grace', 64]]
-~~~
-
-## zips
-* 
