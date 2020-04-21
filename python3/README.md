@@ -69,3 +69,6 @@ def divides(a,b):
 jenny = ['Jenny', 61, 10.5]
 heights = [['Jenny', 61], ['Alexus', 70], ['Sam', 67], ['Grace', 64]]
 ~~~
+
+## zips
+* 
