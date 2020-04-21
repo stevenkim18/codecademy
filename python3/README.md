@@ -51,3 +51,13 @@ low ,high = get_boundaries(100, 20)
 ~~~python
 print(type(변수)) # class 'str'
 ~~~
+
+## try execption
+~~~python
+def divides(a,b):
+  try:
+    result = a / b
+    print (result)
+  except ZeroDivisionError:
+    print ("Can't divide by zero!")
+~~~
