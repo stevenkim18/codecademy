@@ -40,20 +40,50 @@ True
 ~~~python
 >>> "Hello World".split()
 ['HEllo', 'World']
+
 >>> "abaaabaabaaabbbaabbababbbaaaabababaaabaa".split('a')
 ['', 'b', '', '', 'b', '', 'b', '', '', 'bbb', '', 'bb', 'b', 'bbb', '', '', '', 'b', 'b', 'b', '', '', 'b', '', '']
+
 >>> "abaaabaabaaabbbaabbababbbaaaabababaaabaa".split('ab')
 ['', 'aa', 'a', 'aa', 'bba', 'b', '', 'bbaaa', '', '', 'aa', 'aa']
 ~~~
 
 ## join()
+* 리스트에 있는 문자열을 합치는 함수
+* 매개변수로 문자열 리스트가 들어옴
 ~~~python
 >>> ' '.join(["Hello", "My", "Name", "is", "steven"])
 'Hello My Name is steven'
 
 >>> ''.join(["Hello", "My", "Name", "is", "steven"])
 'HelloMyNameissteven'
-
-
 ~~~
 
+## strip()
+* 매개변수로 받은 앞 뒤에 문자를 삭제하는 함수
+~~~python
+>>> "    Hello World    ".strip()
+'Hello World'
+
+>>> "~~~~~~~111HEllo WOrld111~~~~~~".strip('~')
+'111HEllo WOrld111'
+~~~
+
+## replace()
+* 두개의 매개변수를 받아서 첫번째 매개변수의 문자를 두번쨰 매개변수의 문자로 바꾸는 함사
+~~~python
+>>> "Hello World my name is steven".replace(' ', '~')
+'Hello~World~my~name~is~steven'
+~~~
+
+## find() 함수
+* 매개변수의 인덱스를 리턴하는 함수
+* 가장 먼저 찾은 곳의 인덱스를 리턴
+* 문자열이 
+~~~python
+>>> "Hello World".find("l") # 'l'은 3개가 있음 가장 맨 앞에 있는 곳의 위치 리턴
+2
+
+>>> "Hello World".find("lo")
+3
+~~~
