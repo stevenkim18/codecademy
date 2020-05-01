@@ -76,14 +76,30 @@ True
 'Hello~World~my~name~is~steven'
 ~~~
 
-## find() 함수
+## find()
 * 매개변수의 인덱스를 리턴하는 함수
 * 가장 먼저 찾은 곳의 인덱스를 리턴
-* 문자열이 
+* 문자열이 매개변수로 들어 오면 찾은 곳에 맨 앞의 위치를 
 ~~~python
 >>> "Hello World".find("l") # 'l'은 3개가 있음 가장 맨 앞에 있는 곳의 위치 리턴
 2
 
 >>> "Hello World".find("lo")
 3
+
+>>> "Hello World".find("l2321")
+-1
 ~~~
+
+## format()
+~~~python
+>>> "Hi my name is {}. I'm {} years old".format("Steven", 29)
+"Hi my name is Steven. I'm 29 years old"
+
+>>> "Hi my name is {name}. I'm {age} years old".format(age = 29, name = "Steven")
+"Hi my name is Steven. I'm 29 years old"
+~~~
+
+
+
+
