@@ -97,3 +97,61 @@ ERROR
 >>> my_info.get("weight")
 >>>
 ~~~
+
+## key 삭제하기
+* .pop(삭제하고자 하는 key, key가 없을 때 출력될 값)
+~~~python
+>>> my_info
+{'name': 'steven', 'age': 29, 'address': 'seoul', 'major': 'accounting'}
+
+>>> my_info.pop("name", 0)
+'steven'
+
+>>> my_info
+{'age': 29, 'address': 'seoul', 'major': 'accounting'}
+
+>>> my_info.pop("name", 0)
+0
+~~~
+
+## 모든 key들만 가져오기
+* 기본적으로 딕셔너리는 key들의 리스트임.
+~~~python
+>>> my_info
+{'age': 29, 'address': 'seoul', 'major': 'accounting', 'name': 'steven'}
+
+>>> list(my_info)
+['age', 'address', 'major', 'name']
+~~~
+* keys() 함수로도 가져올 수 있음.
+* 특이한 점은 객체로 가지고 옴.
+~~~python
+>>> my_info.keys()
+dict_keys(['age', 'address', 'major', 'name'])
+~~~
+
+## 모든 value들만 가져오기
+* values() 함수를 사용해서 가능
+~~~python
+>>> my_info.values()
+dict_values([29, 'seoul', 'accounting', 'steven'])
+~~~
+
+## 모든 key, value값 가져오기
+* items() 함수를 이용함
+~~~python
+>>> biggest_brands = {"Apple": 184, "Google": 141.7, "Microsoft": 80, "Coca-Cola": 69.7, "Amazon": 64.8}
+
+>>> biggest_brands.items()
+dict_items([('Apple', 184), ('Google', 141.7), ('Microsoft', 80), ('Coca-Cola', 69.7), ('Amazon', 64.8)])
+
+>>> for company, value in biggest_brands.items():
+...   print(company + " has a value of " + str(value) + " billion dollars. ")
+...
+
+Apple has a value of 184 billion dollars.
+Google has a value of 141.7 billion dollars.
+Microsoft has a value of 80 billion dollars.
+Coca-Cola has a value of 69.7 billion dollars.
+Amazon has a value of 64.8 billion dollars.
+~~~
