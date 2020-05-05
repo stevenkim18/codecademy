@@ -48,3 +48,32 @@
 >>> stack
 {'Java': 'Spring', 'Python': 'Django', 'Ruby': 'Rails'}
 ~~~
+
+## key를 사용해서 value값 가져오기
+
+### 인덱스 이용하기
+~~~python
+>>> my_info
+{'name': 'steven', 'age': 29, 'address': 'seoul', 'major': 'accounting'}
+
+>>> my_info["name"]
+'steven'
+~~~
+
+* 없는 key를 이용할때 에러 발생
+~~~python
+>>> my_info["weight"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'weight'
+~~~
+
+* if 를 사용해서 key가 있는지 검사
+~~~python
+>>> if "weight" in my_info:
+...     print(my_info["weight"])
+>>>
+~~~
+
+### try except 사용해서 예외처리하기
+~~~
