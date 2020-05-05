@@ -76,4 +76,24 @@ KeyError: 'weight'
 ~~~
 
 ### try except 사용해서 예외처리하기
+~~~python
+>>> try:
+...     print(my_info["weight"])
+... except KeyError:
+...     print("ERROR")
+...
+ERROR
+~~~
+
+### 안전하게 가져고 오기(Get 함수 사용하기)
+* .get(key, key가 없을 때 출력할 값)
+~~~python
+>>> my_info.get("name", 0)
+'steven'
+
+>>> my_info.get("weight", 0)
+0
+
+>>> my_info.get("weight")
+>>>
 ~~~
