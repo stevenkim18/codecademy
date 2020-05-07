@@ -55,3 +55,16 @@ HelloWorld!!
 123
 ~~~
 
+## 파일에 쓰기
+* open(파일 이름, 모드)
+* 읽기 모드 --> "r" 쓰기 모드 --> "w"
+~~~python
+>>> with open("new.txt", "w") as file:
+...     file.write("newfile!!")
+...
+~~~
+* new.txt
+~~~
+> cat new.txt
+newfile!!%
+~~~
