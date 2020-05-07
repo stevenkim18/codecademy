@@ -96,7 +96,18 @@ file.close()
 #### 참고
 https://devpouch.tistory.com/79
 
+## csv 파일 읽고 쓰기
 
+### csv 파일 이란
+* csv 파일은 Comma-Separated Values 즉 콤마로 분류 되어 있는 값들이란 뜻
+* 쉼표로 데이터가 분류되어 있음.
+~~~
+Name,Username,Email
+steven,1188ss,111888@navar.com
+hannh,gogoh12,hahw@hanmail.com
+john,j1122wq,john@goggle.com
+song,ss231s,song11@gooogle.com
+~~~
 
 
 
