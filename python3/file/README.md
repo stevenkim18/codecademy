@@ -62,9 +62,26 @@ HelloWorld!!
 >>> with open("new.txt", "w") as file:
 ...     file.write("newfile!!")
 ...
+9
 ~~~
 * new.txt
 ~~~
 > cat new.txt
 newfile!!%
 ~~~
+
+## 파일에 추가하기
+* "a" --> append mode
+~~~python
+>>> with open("new.txt", "a") as file:
+...     file.write("append")
+...
+6
+~~~
+* new.txt
+~~~
+> cat new.txt
+newfile!!append%
+~~~
+
+
