@@ -84,4 +84,20 @@ newfile!!%
 newfile!!append%
 ~~~
 
+## with을 사용하는 이유
+* 원래 사용 방식 open() --> close()
+~~~python
+file = open("new.txt", "a")
+file.write("Hello")
+file.close()
+~~~
+* 그런게 보통 close를 잘 까먹고 안해줌. close를 안해주면 메모리 영역으로 잡혀 있음.
+* with 안에서 해결하는 것이 편함.
+#### 참고
+https://devpouch.tistory.com/79
+
+
+
+
+
 
