@@ -130,21 +130,3 @@ OrderedDict([('Name', 'song'), ('Username', 'ss231s'), ('Email', 'song11@gooogle
 ~~~
 
 
-~~~python
->>> import csv
->>> with open("info.csv", newline="") as file:
-...     reader = csv.Di
-csv.Dialect(     csv.DictReader(  csv.DictWriter(
-...     reader = csv.DictReader(file)
-...     for row in reader:
-...             print(row)
-...
-OrderedDict([('Name', 'steven'), ('Username', '1188ss'), ('Email', '111888@navar.com')])
-OrderedDict([('Name', 'hannh'), ('Username', 'gogoh12'), ('Email', 'hahw@hanmail.com')])
-OrderedDict([('Name', 'john'), ('Username', 'j1122wq'), ('Email', 'john@goggle.com')])
-OrderedDict([('Name', 'song'), ('Username', 'ss231s'), ('Email', 'song11@gooogle.com')])
-~~~
-
-
-
-
